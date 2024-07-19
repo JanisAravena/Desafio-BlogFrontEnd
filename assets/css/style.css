@@ -1,38 +1,210 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
-    --color-black: #000000;
-    --color-red: #E93E30;
-    --color-yellow: #F7E018;
-    --color-blue: #299ED5;
-    --color-dark-gray: #292C33;
-    --color-green: #67C770;
-    --color-purple: #563D7C;
-  }
-
+/* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-  }
-
-  .navbar__container {
-    display: flex;
-    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  .navbar__brand {
-    display: flex;
-    align-items: center;
+  /* .header {
+    background-color: #333;
+    color: #fff;
   }
-  
+   */
   .navbar__logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px; 
+    max-width: 55px;
+    height: auto;
+    border-radius: 10x;
   }
   
   .navbar__title {
-    /* font-family: 'Poppins', sans-serif; */
-    font-weight: 400; 
-    color: var(--color-black); 
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
   }
+  
+  .main-section {
+    padding: 20px;
+  }
+  
+  .main-section__title,
+  .main-section__subtitle {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .main-section__image,
+  .main-section__news-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 20px;
+  }
+
+  .main-section__news-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .main-section__paragraph {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .main-section__side-images {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .side-image {
+    width: 30%;
+  }
+  
+  .side-image__img {
+    max-width: 189px;
+    height: 145px;
+    border-radius: 20px;
+  }
+  
+  .side-image__title {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .side-image__paragraph {
+    font-size: 14px;
+  }
+  
+  .popular-categories-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .popular {
+    width: 65%;
+  }
+  
+  .popular__title,
+  .categories__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .popular__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card__image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card__content {
+    padding: 15px;
+  }
+  
+  .card__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card__description {
+    font-size: 14px;
+  }
+  
+  .categories {
+    margin: 20px 0;
+  }
+  
+  .categories__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .categories__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .category {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .category__img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .category--html {
+    background-color: #E93E30;
+  }
+  
+  .category--javascript {
+    background-color: #F7E018;
+    color: #000;
+  }
+  
+  .category--css {
+    background-color: #299ED5;
+  }
+  
+  .category--react {
+    background-color: #292C33;
+  }
+  
+  .category--vue {
+    background-color: #67C770;
+  }
+  
+  .category--bootstrap {
+    background-color: #563D7C;
+  }
+  
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .footer__logo {
+    max-width: 50px;
+    height: auto;
+  }
+  
+  .footer__text {
+    margin: 0;
+  }
+  
+  .footer__date {
+    margin: 0;
+  }
+  
